@@ -2,6 +2,10 @@
 
 iOS底部弹框视图，根据需要可以自定义颜色和字体。
 
+以下是效果图：
+
+![image](http://github.com/MrWheat/MZActionSheetDemo/raw/master/屏幕录制.gif)
+
 使用步骤如下：
 
 首先调用以下方法对ActionSheet初始化。
