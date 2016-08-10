@@ -15,7 +15,7 @@
 		D83DAC471D48528C007BFAAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83DAC451D48528C007BFAAE /* LaunchScreen.storyboard */; };
 		D83DAC521D48528C007BFAAE /* MZActionSheetDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DAC511D48528C007BFAAE /* MZActionSheetDemoTests.m */; };
 		D83DAC5D1D48528C007BFAAE /* MZActionSheetDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DAC5C1D48528C007BFAAE /* MZActionSheetDemoUITests.m */; };
-		D83DAC731D488531007BFAAE /* MZActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D83DAC721D488531007BFAAE /* MZActionSheet.m */; };
+		D8CC48881D5B1C180032A8C4 /* MZActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC48871D5B1C180032A8C4 /* MZActionSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		D83DAC581D48528C007BFAAE /* MZActionSheetDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZActionSheetDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83DAC5C1D48528C007BFAAE /* MZActionSheetDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZActionSheetDemoUITests.m; sourceTree = "<group>"; };
 		D83DAC5E1D48528C007BFAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D83DAC711D488531007BFAAE /* MZActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZActionSheet.h; sourceTree = "<group>"; };
-		D83DAC721D488531007BFAAE /* MZActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZActionSheet.m; sourceTree = "<group>"; };
+		D8CC48861D5B1C180032A8C4 /* MZActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZActionSheet.h; sourceTree = "<group>"; };
+		D8CC48871D5B1C180032A8C4 /* MZActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZActionSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,8 @@
 		D83DAC6A1D4852C4007BFAAE /* MZActionSheet */ = {
 			isa = PBXGroup;
 			children = (
-				D83DAC711D488531007BFAAE /* MZActionSheet.h */,
-				D83DAC721D488531007BFAAE /* MZActionSheet.m */,
+				D8CC48861D5B1C180032A8C4 /* MZActionSheet.h */,
+				D8CC48871D5B1C180032A8C4 /* MZActionSheet.m */,
 			);
 			path = MZActionSheet;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83DAC731D488531007BFAAE /* MZActionSheet.m in Sources */,
+				D8CC48881D5B1C180032A8C4 /* MZActionSheet.m in Sources */,
 				D83DAC3F1D48528C007BFAAE /* DemoViewController.m in Sources */,
 				D83DAC3C1D48528C007BFAAE /* MZAppDelegate.m in Sources */,
 				D83DAC391D48528C007BFAAE /* main.m in Sources */,
@@ -510,6 +510,7 @@
 				D83DAC631D48528C007BFAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83DAC641D48528C007BFAAE /* Build configuration list for PBXNativeTarget "MZActionSheetDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				D83DAC661D48528C007BFAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83DAC671D48528C007BFAAE /* Build configuration list for PBXNativeTarget "MZActionSheetDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				D83DAC691D48528C007BFAAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

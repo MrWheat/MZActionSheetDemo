@@ -59,9 +59,9 @@
     return self;
 }
 
+#pragma mark -- 创建UI控件
 - (void)installSubViews {
     self.frame = [UIScreen mainScreen].bounds;
-    
     // 初始化遮罩视图
     _blackBgV = [[UIView alloc]initWithFrame:self.bounds];
     _blackBgV.backgroundColor = [UIColor colorWithWhite:0.142 alpha:1.000];
@@ -118,7 +118,7 @@
     _actionSheetV.hidden = YES;
 }
 
-//  颜色转换为背景图片
+#pragma mark -- 颜色转换为背景图片
 - (UIImage *)imageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -130,8 +130,8 @@
     return image;
 }
 
-- (void)show
-{
+#pragma mark -- 显示和隐藏
+- (void)show {
     [self installSubViews];
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     self.hidden = NO;
@@ -145,14 +145,7 @@
     }];
 }
 
-- (void)cancelButtonDown:(UIButton *)sender {
-    if(_clickBlcok) {
-        _clickBlcok(_otherButtons.count);
-    }
-    [self tapClick:nil];
-}
-
-- (void)tapClick:(UIGestureRecognizer *)tap {
+- (void)hidden {
     __block typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.3 animations:^{
         CGRect frame = _actionSheetV.frame;
@@ -164,6 +157,18 @@
         _actionSheetV.hidden = YES;
         [weakSelf removeFromSuperview];
     }];
+}
+
+#pragma mark -- 点击事件
+- (void)cancelButtonDown:(UIButton *)sender {
+    if(_clickBlcok) {
+        _clickBlcok(_otherButtons.count);
+    }
+    [self hidden];
+}
+
+- (void)tapClick:(UIGestureRecognizer *)tap {
+    [self hidden];
 }
 
 #pragma mark - UITableViewDelegate
@@ -217,7 +222,7 @@
     if(_clickBlcok) {
         _clickBlcok(indexPath.row);
     }
-    [self tapClick:nil];
+    [self hidden];
 }
 
 #pragma mark - UITableViewDataSource
