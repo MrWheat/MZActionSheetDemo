@@ -23,7 +23,7 @@ iOS底部弹出视图，根据需要可以自定义颜色和字体。
 
 初始化完成后，修改控件属性，这里预留了一些可能用到的属性，可以根据需要更改。
 
-```python
+```Objective
 @property (nonatomic, strong)UIColor *cancelButtonColor;       // 取消按钮的颜色
 @property (nonatomic, strong)UIColor *otherButtonColor;         // 其他按钮的颜色
 @property (nonatomic, strong)UIColor *titleColor;               // 标题颜色
@@ -34,10 +34,12 @@ iOS底部弹出视图，根据需要可以自定义颜色和字体。
 
 最后调用以下方法显示。
 
-    /**
-     *  ActionSheet显示
-     */
-    - (void)show;
+```Objective-c
+/**
+ *  ActionSheet显示
+ */
+- (void)show;
+```
 
 
 
