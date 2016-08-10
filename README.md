@@ -4,7 +4,7 @@ iOS底部弹框视图，根据需要可以自定义颜色和字体。
 
 以下是效果图：
 
-![](http://7pumug.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6.gif)
+![](https://github.com/MrWheat/MZActionSheetDemo/blob/master/MZActionSheetDemoImage.gif?raw=true)
 
 使用步骤如下：
 
